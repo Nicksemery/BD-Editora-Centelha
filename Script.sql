@@ -1,4 +1,4 @@
-create database Editora_Centelha;
+create database Editora Centelha;
 
 create table Colaboradores (
 	id serial PRIMARY KEY,
