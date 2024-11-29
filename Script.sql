@@ -6,14 +6,14 @@ create table Colaboradores (
     tipo_colaborador varchar(50),
     CPF varchar(14),
     CNPJ varchar(18),
-    id_parceria varchar(50)
+    parceria varchar(50)
 );
 
-insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, id_parceria) values ('João Pereira', 'entregador', '123.456.789-01', '12.345.678/0001-90', 'ENT-001');
-insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, id_parceria) values ('Maria Souza', 'fornecedor', '987.654.321-00', '98.765.432/0001-01', 'FOR-001');
-insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, id_parceria) values ('Carlos Lima', 'escritor', '234.567.890-12', '23.456.789/0001-23', 'ESCR-001');
-insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, id_parceria) values ('Rogério Oliveira','entregador','831.957.341-86','84.369.752/0001-26','ENT-002');
-insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, id_parceria) values ('Felipe Castilho','escritor','357.159.628-46','93.846.246/0001-08','ESCR-002');
+insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, parceria) values ('João Pereira', 'entregador', '123.456.789-01', '12.345.678/0001-90', 'ENT-001');
+insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, parceria) values ('Maria Souza', 'fornecedor', '987.654.321-00', '98.765.432/0001-01', 'FOR-001');
+insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, parceria) values ('Carlos Lima', 'escritor', '234.567.890-12', '23.456.789/0001-23', 'ESCR-001');
+insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, parceria) values ('Rogério Oliveira','entregador','831.957.341-86','84.369.752/0001-26','ENT-002');
+insert into Colaboradores (nome, tipo_colaborador, CPF, CNPJ, parceria) values ('Felipe Castilho','escritor','357.159.628-46','93.846.246/0001-08','ESCR-002');
  
 select * from colaboradores 
 
@@ -109,4 +109,3 @@ from
 join
 	produto p on c.id = p.id_clientes 
 	
-
